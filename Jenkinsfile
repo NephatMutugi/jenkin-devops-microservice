@@ -1,11 +1,6 @@
 pipeline {
 	// agent any
-	agent {	
-		docker {
-			 image 'maven:3.6.3'
-			 args '-v /var/run/docker.sock:/var/run/docker.sock' 
-		} 
-	}
+	agent {	docker { image 'maven:3.6.3' } }
 	stages {
 		stage('Build'){
 			steps {
