@@ -3,7 +3,6 @@ pipeline {
 	agent {	
 		docker { 
 			image 'maven:3.6.3'
-			host 'tcp://localhost:2375'
 		}
 	}
 	stages {
